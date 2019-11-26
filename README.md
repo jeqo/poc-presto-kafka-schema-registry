@@ -1,5 +1,8 @@
 # Presto/Kafka/Avro with Confluent Schema Registry
 
+Presto currently does not support Confluent Schema Registry to decode Avro messages from 
+Kafka. This repo is a proof-of-concept to test https://github.com/prestosql/presto/pull/2106.
+
 ## Preparing data in Kafka cluster
 
 Start Kafka cluster:
