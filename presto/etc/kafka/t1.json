@@ -1,0 +1,22 @@
+{
+    "tableName": "t1",
+    "topicName": "t1",
+    "confluentSchemaRegistryUrl": "http://localhost:8081",
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "key",
+                "type": "VARCHAR"
+            }
+        ]
+    },
+    "message": {
+        "dataFormat": "avro",
+        "dataSchema": "http://localhost:8081/subjects/t1-value/versions/latest/schema",
+        "dataReaderProvider": "confluent-schema-registry",
+        "fields": [
+            { "name": "field", "type": "VARCHAR", "mapping": "/f1"}
+        ]
+    }
+}
